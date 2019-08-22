@@ -24,7 +24,7 @@ class Instructor extends Person {
     demo () {
         return `Today we are learning about ${this.subject}`;
     }
-    grade () {
+    grade (student, subject) {
         return `${student.name} receives a perfect score on ${this.subject}`;
     }
 }
@@ -102,4 +102,4 @@ console.log(aang.listsSubjects());
 console.log(aang.PRAssignment());
 console.log(aang.sprintChallenge());
 console.log(roku.catchPhrase);
-console.log(roku.grade());
+console.log(roku.grade(aang, 'Python'));
